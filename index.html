@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <article class="front">
+             <div class="front-card">
+                <img src="./images/front.png" class="card">
+             </div>
+             <div class="front-content">
+                <img src="./images/logo.svg" class="logo">
+
+                <div class="card-details">
+                    <p class="number">0000 0000 0000 0000</p>
+               
+                <div class="min-content">
+                   <div class="cardName">
+                     <p>Ifeoma Blessing</p>
+                   </div>
+                    <div class="expiry-date">
+                        <p>23/23</p>
+                    </div>
+                </div>
+                </div>
+             </div>
+            </article>
+
+            <div class="back">
+                <div class="back-card">
+                    <img src="./images/cardBacl.png" class="card">
+                </div>
+                <div class="back-content">
+                    <p class="cvc">000</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="main-content">
+            <form id="form">
+                <div class="input-field">
+                    <label>cardholder name</label>
+                    <input type="text" id="name"
+                    placeholder="e.g Ifeoma Blessing"required>
+                </div>
+                <div class="input-field">
+                    <label>card number</label>
+                    <input type="text" id="cardNum"
+                     placeholder="e.g 0000 1111 2222 3333" required>
+                </div>
+
+                <div class="row">
+                <div class="input-field">
+                    <label>exp.date</label>
+                    <input type="text" id="month"
+                    placeholder="MM" class="rows"required>
+                </div>
+                <div class="input-field">
+                    <label>(mm/yy)</label>
+                    <input type="text" id="year"
+                    placeholder="YY" class="rows"required>
+                </div>
+                <div class="input-field">
+                    <label>cvc</label>
+                    <input type="text" id="cvc"
+                     placeholder="e.g 012"required>
+                </div>
+
+            </div>
+
+                <button id="confirm">confirm</button>
+            </form>
+
+            <article class="complete" id="complete">
+                <img src="./images/complete.svg" alt="">
+                <h2>Thank You!</h2>
+                <p>We've added your card details</p>
+                <button id="continue">Continue</button>
+            </article>
+        </section>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
